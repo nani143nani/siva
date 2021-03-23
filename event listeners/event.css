@@ -1,0 +1,36 @@
+body{
+    margin:o;
+    padding:0;
+}
+/*.column{
+    float:left;
+    margin:2px;
+    padding:6%;
+  
+}
+button{
+    background-color: aquamarine;
+     padding:10px 20px;
+     color:red;
+     border-radius:8px 7px 3px 9px;
+     border:none;
+     outline: none;
+}
+.columnn{
+    float:left;
+    margin:2px;
+    padding:4%;
+}*/
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .column {
+    float: left;
+    width: 32.33%;
+    padding: 5px;
+   
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 35px;
+  }

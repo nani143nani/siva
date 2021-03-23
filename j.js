@@ -221,12 +221,122 @@ console.log(dup(n))
      return value>20
  })
  console.log(t)*/
- var j=[22,4,5,6]
+ /*var j=[22,4,5,6]
  /*var y=j.findIndex(function(){
      return 22;
- })*/
+ })
   var t=j.find(function(value){
      return value==4;
  })
- console.log(t)
+ console.log(t)*/
+ /*var j=[22,4,5,6]
+ var u=j.slice(1,2)
+
+ console.log(u)*/
+//pr to add numbers up to given numbers
+ /*function addUp(num) {
+	let i=0
+    let sum=0
+	while(i<=num){
+		sum+=i
+		i++
+	}
+	return sum
+}
+console.log(addUp(5
+    ))
+    //or*/
+/*function add(num){
+    if(num===1) return 1
+    else return num+add(num-1)
+}
+console.log(add(5
+    ))*/
+/*var num=prompt("")
+console.log(num)*/
+
+//practise
+/*
+function findMissingLetter(array)
+{
+  for(let z=0;z<=array.length-1;z++){
+    for(let v=0;v<=array.length-1;v++){
+      if(array[z]!=s[v]){
+        return array[z];
+      }
+    }
+  }
+  
+}
+let alphabets=[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+let s=[];
+
+
+for(let i=0;i<=array.length-1;i++){
+  s.push(alphabets[i])
+}
+array=[a,b,c,d,f]
+findMissingLetter(array)*/
+
+/*var str = "a";
+var n = str.charCodeAt(0);
+array=[A,B,C]
+
+var f=str.charCodeAt(1)-str.charCodeAt(0);
+console.log(f)*/
+///*
+/*function person(first_name, last_name){
+    this.first_name=first_name;
+ this.last_name=last_name; 
+
+ this.displayname = function(){
+     console.log(`Name: ${this.first_name} ${this.last_name}` );
  
+ };
+}
+ let john= new person('john','reid');
+john.displayname()/*/
+/*
+function Person(first_name, last_name) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+  
+    this.displayName = function() {
+        console.log(`Name: ${this.first_name} ${this.last_name}`);
+    };
+}
+let john = new Person('abhi', 'sheik');
+john.displayName();
+*/
+
+
+
+/*
+ var person={
+     firstname:"abhihek",
+     lastname:"kumar",
+     fullname:()=>this.firstname+""+this.lastname
+
+ }
+ console.log(person.fullname())*/
+/*
+ var firstname="abhi"
+ var lastname="sheik"
+console.log(this.firstname+""+this.lastname)*/
+
+/*var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id     : 5566,
+    fullName : function() {
+      return this.firstName + " " + this.lastName;
+      fullName : ()=> this. firstName+""+this.lastName
+    }
+  };
+  var s=person.fullName();
+  console.log(s)*/
+
+  /*fullname=()=> "'hello"
+  console.log(fullname())*/
+  let v=CharCodeAt(a)
+  console.log(v)
