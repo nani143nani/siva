@@ -30,7 +30,13 @@ div.container {
     width: 32.33%;
     padding: 5px;
    
-    background-color: white;
+    background-image: linear-gradient(to right, red , yellow);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 35px;
   }
+  button{
+      border-radius: 6px 4px 5px 2px;
+      outline:none;
+      
+  }
+  

@@ -25,7 +25,7 @@ text.addEventListener('focus', (event) => {
     event.target.style.background = 'pink';
   })
   text.addEventListener('blur', (event) => {
-    event.target.style.background = 'indigo';
+    event.target.style.background = '#EE82EE';
   })
   
 
