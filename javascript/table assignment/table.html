@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+   
+button{
+    border:none;
+    outline:none;
+    background:none;
+    border-radius: 5px 4px 5px 2px;
+}
+
+        </style>
+</head>
+<body>
+   <table class="table table-striped">
+        <tr>
+            <th class="table-danger">name</th>
+            <th class="table-primary">email</th>
+            <th class="table-success">loc<th>
+        </tr>
+        <tbody id='newtable'>
+
+        </tbody>
+    </table>
+    <h1 id="changedd"> this field is empty</h1>
+    <script>
+        var details=[
+            {'name':'ajay','email':'ajay.gmail','loc':'bengalore'},
+            {'name':'ajay','email':'ajay.gmail','loc':'bengalore'},
+            {'name':'ajay','email':'ajay.gmail','loc':'bengalore'},
+            {'name':'ajay','email':'ajay.gmail','loc':'bengalore'},
+        ]
+
+ displaytable()
+ function displaytable(){
+    var x=document.getElementById('newtable')
+    function calll(ff){
+            var y=`<tr>
+                   <td class="table-success"><button id='mousee1'> ${ff.name}</button>
+                   
+                    </td>
+                   <td  class="table-primary"> ${ff.email}</td>
+                   <td class="table-danger">${ff.loc}</td>
+
+                </tr>`
+               
+               x.innerHTML=x.innerHTML+y;
+
+        }
+
+
+        var f=details.map(calll)
+
+
+ }
+       /* function displaytable(creatingtable){
+            var x=document.getElementById('newtable')
+            for (var i=0;i<creatingtable.length;i++){
+            var y=`<tr>
+                   <td class="table-warning"><button id='mousee1'> ${creatingtable[i].name}</button>
+                   
+                    </td>
+                   <td class="table-light"> ${creatingtable[i].email}</td>
+                   <td class="table-dark">${creatingtable[i].loc}</td>
+                </tr>`
+
+               x.innerHTML=x.innerHTML+y;
+            }  
+        } */
+        function calll(f){
+            var y=`<tr>
+                   <td class="table-warning"><button id='mousee1'> ${f.name}</button>
+                   
+                    </td>
+                   <td class="table-light"> ${f.email}</td>
+                   <td class="table-dark">${f.loc}</td>
+                </tr>`
+
+               x.innerHTML=x.innerHTML+y;
+
+        }
+
+
+        var f=details.map(calll)
+
+
+
+
+
+        /*let btnmouseover=document.querySelector('#mousee1');
+        btnmouseover.addEventListener('click',() => btnmouseover.style.backgroundColor='#AC33FF')*/
+    
+       </script>
+ 
+</body>
+</html>

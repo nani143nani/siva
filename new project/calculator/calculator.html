@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <link href="calculator.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gf">
+        <h1>hello</h1>
+    </div>
+
+    <input type="text" id="result" ></br>
+<div class="container">
+    <button id="one" onclick="dis(1)">1</button>
+    <button id="two" onclick="dis('2')">2</button>
+    <button id="three" onclick="dis('3')">3</button>
+    <button id="four"onclick="dis('4')">4</button>
+    
+    <button id="cal" onclick="solve()">=</button>
+    <button id="clear" onclick="clearr()">clc</button>
+</div>
+<div class="container">
+    <button id="one" onclick="dis(5)">5</button>
+    <button id="two" onclick="dis('6')">6</button>
+    <button id="three" onclick="dis('7')">7</button>
+    <button id="four"onclick="dis('8')">8</button>
+    <button id="plus" onclick="dis('9')">9</button>
+    
+</div>
+<div class="container">
+    <button id="one" onclick="dis('+')">+</button>
+    <button id="two" onclick="dis('-')">-</button>
+    <button id="three" onclick="dis('*')">*</button>
+    <button id="four"onclick="dis('/')">/</button>
+    <button id="plus" onclick="dis('%')">%</button>
+    
+</div>
+
+  <script>
+  /*function clear(){
+
+      document.getElementById("result").value=""
+  }*/
+  function clearr()
+         {
+             document.getElementById("result").value = ""
+         }
+   function solve()
+         {
+             let x = document.getElementById("result")
+             let y = eval(x.value)
+             //document.getElementById("result").value = y
+            x.value=y
+         }
+           
+function dis(valuev){
+    document.getElementById("result").value+=valuev;
+    
+}
+  </script>  
+</body>
+</html>

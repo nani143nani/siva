@@ -338,5 +338,21 @@ console.log(this.firstname+""+this.lastname)*/
 
   /*fullname=()=> "'hello"
   console.log(fullname())*/
-  let v=CharCodeAt(a)
-  console.log(v)
+  /*let v=CharCodeAt(a)
+  console.log(v)*/
+
+  //find howmany times word is repeating
+  /*countTrue([true, false, false, true, false]) ➞ 2
+
+countTrue([false, false, false, false]) ➞ 0
+
+countTrue([]) ➞ 0*/
+/*function countTrue(arr) {
+    for(let x in arr){
+        if (arr[x]==true){
+        s+=1
+        }
+    }
+   return console.log(s);
+}
+var s=0;*/

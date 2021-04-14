@@ -1,0 +1,18 @@
+var bharat={
+    fullname:"somarouthu bharat kumar",
+    setfullname:function(newvalue){
+        var reg=new RegExp(/\d+/);
+        if(reg.test(newvalue)){
+            console.log("invalid name")
+        }
+        else{
+            this.fullname=newvalue;
+        }
+    },
+    "getfullname":function(){
+        return this.fullname;
+    }
+};
+console.log(bharat.getfullname())
+bharat.setfullname(45)
+console.log(bharat.fullname=45)
